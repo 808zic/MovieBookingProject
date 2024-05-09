@@ -1,24 +1,25 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
+import Home from './pages/Home';
+import Layout from './components/Layout';
+import { useState } from 'react';
+import Movies from './pages/Movies';
+import Bookings from './pages/Bookings';
 
 function App() {
+  const [movies, setMovies] = useState([]);
+  const [bookings, setBookings] = useState([]);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <HashRouter>
+      <Routes>
+        <Route path="/" element={<Layout movies={movies} setMovies={setMovies} />}>
+          <Route index element={<Home />} />
+          <Route path="/movies" element={<Movies movies={movies} setMovies={setMovies} bookings={bookings} setBookings={setBookings} />} />
+          <Route path="/booking" element={<Bookings bookings={bookings} setBookings={setBookings} />} />
+        </Route>
+      </Routes>
+    </HashRouter>
   );
 }
 
