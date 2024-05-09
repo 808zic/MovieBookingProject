@@ -1,0 +1,42 @@
+* {
+    box-shadow: none !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+input:focus {
+    border-color: #198754 !important;
+}
+
+/* NavBar */
+.nav-link {
+    color: black !important;
+    font-size: 1rem !important;
+    font-weight: 500 !important;
+    margin: 0 5px;
+}
+
+.nav-link:hover {
+    color: #198754 !important;
+}
+
+/* Header */
+header {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.green-bg {
+    background-color: #198754 !important;
+    border-color: #198754 !important;
+}
+
+.me-auto {
+    margin-left: auto !important;
+}
