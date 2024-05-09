@@ -10,7 +10,7 @@ const Header = () => {
         style={{ width: "100%" }}
       />
       <div className="d-flex justify-content-center align-items-center p-2 text-center" style={{ flexDirection: 'column' }}>
-        <h1 style={{ fontWeight: "700" }}>Welcome to Moargan Movies</h1>
+        <h1 style={{ fontWeight: "700" }}>Welcome to GIF Movies</h1>
         <p style={{ width: '400px' }}>
           A safe haven where you can book a ticket to any movie of your liking
           and watch it with your friends and family at our very own cinemma
