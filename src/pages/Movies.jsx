@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import MoviesCards from "../components/movies/MoviesCards";
+import MoviesCard from '../components/movies/MoviesCard';
 import MovieForm from "../components/movies/MovieForm";
 import { Button } from "react-bootstrap";
 

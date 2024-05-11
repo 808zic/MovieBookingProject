@@ -9,14 +9,14 @@ import Bookings from './pages/Bookings';
 
 function App() {
   const [movies, setMovies] = useState([]);
-  const [bookings, setBookings] = useState([]);
+  const [booking, setBooking] = useState([]);
   return (
     <HashRouter>
       <Routes>
         <Route path="/" element={<Layout movies={movies} setMovies={setMovies} />}>
           <Route index element={<Home />} />
           <Route path="/movies" element={<Movies movies={movies} setMovies={setMovies} bookings={bookings} setBookings={setBookings} />} />
-          <Route path="/booking" element={<Bookings bookings={bookings} setBookings={setBookings} />} />
+          <Route path="/booking" element={<Booking bookings={bookings} setBookings={setBookings} />} />
         </Route>
       </Routes>
     </HashRouter>

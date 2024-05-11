@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-expressions */
 import axios from "axios";
 import React, { useEffect } from "react";
 import Movie from "./Movie";
